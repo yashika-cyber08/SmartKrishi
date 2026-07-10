@@ -1,0 +1,326 @@
+{
+  "model_type": "XGBoost-default",
+  "sample_count": 5657,
+  "raw_sample_count": 2600,
+  "class_count": 26,
+  "feature_order": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall",
+    "temp_humidity_ratio",
+    "npk_total",
+    "n_ratio",
+    "p_ratio",
+    "k_ratio",
+    "rain_temp_product",
+    "ph_category",
+    "moisture_index",
+    "soil_moisture_proxy",
+    "npk_balance",
+    "heat_index",
+    "rain_intensity",
+    "pk_ratio",
+    "n_to_rain"
+  ],
+  "base_features": [
+    "N",
+    "P",
+    "K",
+    "temperature",
+    "humidity",
+    "ph",
+    "rainfall"
+  ],
+  "derived_features": [
+    "temp_humidity_ratio",
+    "npk_total",
+    "n_ratio",
+    "p_ratio",
+    "k_ratio",
+    "rain_temp_product",
+    "ph_category",
+    "moisture_index",
+    "soil_moisture_proxy",
+    "npk_balance",
+    "heat_index",
+    "rain_intensity",
+    "pk_ratio",
+    "n_to_rain"
+  ],
+  "accuracy": 0.982692,
+  "macro_f1": 0.982681,
+  "weighted_f1": 0.982681,
+  "model_selection": {
+    "default_cv_macro_f1": 0.933811,
+    "best_cv_macro_f1": 0.935314,
+    "cv_improvement": 0.001502,
+    "used_default": true,
+    "best_params": {
+      "colsample_bytree": 0.7,
+      "learning_rate": 0.05,
+      "max_depth": 6,
+      "min_child_weight": 1,
+      "n_estimators": 500,
+      "subsample": 0.8
+    },
+    "grid_size": 96
+  },
+  "per_crop_metrics": [
+    {
+      "crop": "apple",
+      "accuracy": 1.0,
+      "avg_confidence": 0.997806,
+      "min_confidence": 0.996298,
+      "samples": 20
+    },
+    {
+      "crop": "banana",
+      "accuracy": 1.0,
+      "avg_confidence": 0.99317,
+      "min_confidence": 0.950144,
+      "samples": 20
+    },
+    {
+      "crop": "blackgram",
+      "accuracy": 1.0,
+      "avg_confidence": 0.991601,
+      "min_confidence": 0.874881,
+      "samples": 20
+    },
+    {
+      "crop": "chickpea",
+      "accuracy": 1.0,
+      "avg_confidence": 0.995405,
+      "min_confidence": 0.932199,
+      "samples": 20
+    },
+    {
+      "crop": "coconut",
+      "accuracy": 1.0,
+      "avg_confidence": 0.997777,
+      "min_confidence": 0.994175,
+      "samples": 20
+    },
+    {
+      "crop": "coffee",
+      "accuracy": 1.0,
+      "avg_confidence": 0.954378,
+      "min_confidence": 0.496328,
+      "samples": 20
+    },
+    {
+      "crop": "cotton",
+      "accuracy": 1.0,
+      "avg_confidence": 0.996072,
+      "min_confidence": 0.97616,
+      "samples": 20
+    },
+    {
+      "crop": "grapes",
+      "accuracy": 1.0,
+      "avg_confidence": 0.996969,
+      "min_confidence": 0.98771,
+      "samples": 20
+    },
+    {
+      "crop": "jute",
+      "accuracy": 0.95,
+      "avg_confidence": 0.886984,
+      "min_confidence": 0.226906,
+      "samples": 20
+    },
+    {
+      "crop": "kidneybeans",
+      "accuracy": 1.0,
+      "avg_confidence": 0.997038,
+      "min_confidence": 0.984632,
+      "samples": 20
+    },
+    {
+      "crop": "lentil",
+      "accuracy": 1.0,
+      "avg_confidence": 0.976269,
+      "min_confidence": 0.837699,
+      "samples": 20
+    },
+    {
+      "crop": "maize",
+      "accuracy": 0.95,
+      "avg_confidence": 0.959235,
+      "min_confidence": 0.485777,
+      "samples": 20
+    },
+    {
+      "crop": "mango",
+      "accuracy": 0.95,
+      "avg_confidence": 0.942797,
+      "min_confidence": 0.288736,
+      "samples": 20
+    },
+    {
+      "crop": "millet",
+      "accuracy": 0.9,
+      "avg_confidence": 0.877645,
+      "min_confidence": 0.009103,
+      "samples": 20
+    },
+    {
+      "crop": "mothbeans",
+      "accuracy": 0.95,
+      "avg_confidence": 0.915081,
+      "min_confidence": 0.010534,
+      "samples": 20
+    },
+    {
+      "crop": "mungbean",
+      "accuracy": 1.0,
+      "avg_confidence": 0.973641,
+      "min_confidence": 0.525061,
+      "samples": 20
+    },
+    {
+      "crop": "muskmelon",
+      "accuracy": 1.0,
+      "avg_confidence": 0.998994,
+      "min_confidence": 0.997825,
+      "samples": 20
+    },
+    {
+      "crop": "mustard",
+      "accuracy": 1.0,
+      "avg_confidence": 0.997516,
+      "min_confidence": 0.963584,
+      "samples": 20
+    },
+    {
+      "crop": "orange",
+      "accuracy": 1.0,
+      "avg_confidence": 0.996634,
+      "min_confidence": 0.988363,
+      "samples": 20
+    },
+    {
+      "crop": "papaya",
+      "accuracy": 1.0,
+      "avg_confidence": 0.99179,
+      "min_confidence": 0.898594,
+      "samples": 20
+    },
+    {
+      "crop": "pigeonpeas",
+      "accuracy": 1.0,
+      "avg_confidence": 0.990397,
+      "min_confidence": 0.944551,
+      "samples": 20
+    },
+    {
+      "crop": "pomegranate",
+      "accuracy": 1.0,
+      "avg_confidence": 0.996713,
+      "min_confidence": 0.988913,
+      "samples": 20
+    },
+    {
+      "crop": "rice",
+      "accuracy": 0.95,
+      "avg_confidence": 0.969256,
+      "min_confidence": 0.470618,
+      "samples": 20
+    },
+    {
+      "crop": "soybean",
+      "accuracy": 1.0,
+      "avg_confidence": 0.943025,
+      "min_confidence": 0.596492,
+      "samples": 20
+    },
+    {
+      "crop": "watermelon",
+      "accuracy": 1.0,
+      "avg_confidence": 0.997895,
+      "min_confidence": 0.989893,
+      "samples": 20
+    },
+    {
+      "crop": "wheat",
+      "accuracy": 0.9,
+      "avg_confidence": 0.885439,
+      "min_confidence": 0.006213,
+      "samples": 20
+    }
+  ],
+  "scenario_validation": [
+    {
+      "name": "MP Indore Kharif - Soybean expected",
+      "expected": "soybean",
+      "predicted": "soybean",
+      "expected_confidence": 0.999933,
+      "top_confidence": 0.999933,
+      "passed": true
+    },
+    {
+      "name": "Rajasthan Jodhpur Kharif - Millet expected",
+      "expected": "millet",
+      "predicted": "millet",
+      "expected_confidence": 0.999754,
+      "top_confidence": 0.999754,
+      "passed": true
+    },
+    {
+      "name": "Punjab Rabi - Wheat expected",
+      "expected": "wheat",
+      "predicted": "wheat",
+      "expected_confidence": 0.999946,
+      "top_confidence": 0.999946,
+      "passed": true
+    },
+    {
+      "name": "WB Kharif - Rice expected",
+      "expected": "rice",
+      "predicted": "rice",
+      "expected_confidence": 0.999766,
+      "top_confidence": 0.999766,
+      "passed": true
+    },
+    {
+      "name": "MH Kharif - Cotton expected",
+      "expected": "cotton",
+      "predicted": "cotton",
+      "expected_confidence": 0.999219,
+      "top_confidence": 0.999219,
+      "passed": true
+    },
+    {
+      "name": "Rajasthan Rabi dry - Mustard expected",
+      "expected": "mustard",
+      "predicted": "mustard",
+      "expected_confidence": 0.998922,
+      "top_confidence": 0.998922,
+      "passed": true
+    },
+    {
+      "name": "UP March Zaid - Watermelon expected",
+      "expected": "watermelon",
+      "predicted": "watermelon",
+      "expected_confidence": 0.999333,
+      "top_confidence": 0.999333,
+      "passed": true
+    },
+    {
+      "name": "Kerala - Rice (high rain) expected",
+      "expected": "rice",
+      "predicted": "rice",
+      "expected_confidence": 0.999565,
+      "top_confidence": 0.999565,
+      "passed": true
+    }
+  ],
+  "scenario_pass_count": 8,
+  "scenario_total": 8,
+  "mustard_raw_test_samples": 20,
+  "sklearn_version": "1.8.0"
+}
